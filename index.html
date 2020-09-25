@@ -15,50 +15,48 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Orlando Portfolio</title>
   </head>
-  <body>
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
     <!-- NAV -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-info text-white fixed-top"
-    >
-    <div class="container">
-      <a class="navbar-brand text-white" href="#">Orlando Challenger</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarNavAltMarkup"
-      >
-        <div class="navbar-nav">
-          <a class="nav-link active text-white" href="#"
-            >Home <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-link text-white" href="#about">About</a>
-          <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-light" href="#home">Orlando Challenger</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link text-light" href="#home"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-link text-light" href="#about">About</a>
+            <a class="nav-link text-light" href="#portfolio">Portfolio</a>
+          </div>
         </div>
       </div>
-    </div>
     </nav>
     <!-- /NAV -->
 
     <!-- JUMBOTRON -->
-    <div class="jumbotron jumbotron-fluid  bg-info text-white">
+    <div class="jumbotron jumbotron-fluid bg-info text-white">
       <div class="container text-sm-center pt-5">
         <h1 class="display-4">Front End Developer</h1>
         <p class="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
+          Front End Web Developer looking for a company where I can make an
+          impact.
         </p>
       </div>
     </div>
@@ -66,103 +64,175 @@
 
     <!-- container -->
     <div class="container">
+      <!-- ABOUT -->
+      <div class="container about">
+        <h1 class="text-center" id="about">ABOUT</h1>
+        <div>
+          <p>
+            I am a front-end web developer with skills in CSS, HTML, and
+            JavaScript. I am passionate about mobile web design and providing an
+            engaging user experience on all platforms. Continual education and
+            keeping up with the latest technology trends are both very important
+            to me. Check out my latest projects at
+            <a href="https://github.com/orlandochallenger"
+              >https://github.com/orlandochallenger</a
+            >. I look forward to applying my previous work experience in
+            hospitality to a new career in tech.
+          </p>
+        </div>
+      </div>
+      <!-- /ABOUT -->
+      <!-- PORTFOLIO -->
       <h1 class="text-center" id="portfolio">PORTFOLIO</h1>
       <div class="row row-cols-1">
         <div class="col-md-6 col-lg-4">
-          <div class="card mb-3" style="width: 18rem">
-            <img src="img/employeeDirectory.png" class="card-img-top" alt="..." />
+          <div class="card mb-5">
+            <img
+              src="img/employeeDirectory.png"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
+              <h5 class="card-title">Employee Directory</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Using JavaScript to create an employee directory by
+                communicating with a third-party API
               </p>
-              <a href="https://orlandochallenger.github.io/project-8/" class="card-link" target="_blank">Site link</a>
+              <a
+                href="https://orlandochallenger.github.io/project-8/"
+                class="card-link btn"
+                target="_blank"
+                >view</a
+              >
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="card mb-3" style="width: 18rem">
+          <div class="card mb-5">
             <img src="img/dashboard.png" class="card-img-top" alt="..." />
             <div class="card-body">
+              <h5 class="card-title">WebApp Dashboard</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Build an interactive dashboard for a web application using
+                advanced web techniques including SVG graphics and JavaScript
+                programming.
               </p>
-              <a href="https://orlandochallenger.github.io/project-7/" class="card-link" target="_blank">Site link</a>
+              <a
+                href="https://orlandochallenger.github.io/project-7/"
+                class="card-link btn"
+                target="_blank"
+                >view</a
+              >
             </div>
           </div>
         </div>
+
         <div class="col-md-6 col-lg-4">
-          <div class="card mb-3" style="width: 18rem">
+          <div class="card mb-5">
             <img src="img/WheelOfSucess.png" class="card-img-top" alt="..." />
             <div class="card-body">
+              <h5 class="card-title">Game Show App</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                In this project, I create a browser version of “Wheel of
+                Success”, a word guessing game.
               </p>
-              <a href="https://orlandochallenger.github.io/project-6/" class="card-link" target="_blank">Site link</a>
+              <a
+                href="https://orlandochallenger.github.io/project-6/"
+                class="card-link btn"
+                target="_blank"
+                >view</a
+              >
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
+
         <div class="col-md-6 col-lg-4">
-          <div class="card mb-3" style="width: 18rem">
+          <div class="card mb-5">
             <img src="img/gallery_mockup.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="https://orlandochallenger.github.io/project-5/" class="card-link" target="_blank">Site link</a>
+              <h5 class="card-title">Photo Gallery</h5>
+              <p class="card-text">An Interactive Photo Gallery.</p>
+              <a
+                href="https://orlandochallenger.github.io/project-5/"
+                class="card-link btn"
+                target="_blank"
+                >view</a
+              >
             </div>
           </div>
         </div>
+
         <div class="col-md-6 col-lg-4">
-          <div class="card mb-3" style="width: 18rem">
+          <div class="card mb-5">
             <img src="img/Circle-UI-Kit.png" class="card-img-top" alt="..." />
             <div class="card-body">
+              <h5 class="card-title">Web Style Guide</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Web Style Guide using Sass as an important tool in a modern
+                Front End Web Developer’s toolbox.
               </p>
-              <a href="https://orlandochallenger.github.io/project-4/" class="card-link" target="_blank">Site link</a>
+              <a
+                href="https://orlandochallenger.github.io/project-4/"
+                class="card-link btn"
+                target="_blank"
+                >view</a
+              >
             </div>
           </div>
         </div>
+
         <div class="col-md-6 col-lg-4">
-          <div class="card mb-3" style="width: 18rem">
-            <img src="img/responsiveWebsite.png" class="card-img-top" alt="..." />
+          <div class="card mb-5">
+            <img
+              src="img/responsiveWebsite.png"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
+              <h5 class="card-title">Mobile-first Responsive Layout</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Designing web pages that look and function well on multiple
+                screen sizes. Using HTML, CSS, and responsive design.
               </p>
-              <a href="https://orlandochallenger.github.io/Project-2/" class="card-link" target="_blank">Site link</a>
+              <a
+                href="https://orlandochallenger.github.io/Project-2/"
+                class="card-link btn"
+                target="_blank"
+                >view</a
+              >
             </div>
           </div>
         </div>
       </div>
+      <!-- /PORTFOLIO -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
       <hr />
+
       <!-- footer -->
-      <div class="row py-3">
-        <div class="col-md-7">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/orlando-challenger-b5ba48100/" target="_blank">Linkedin <img src="img/linkedin.svg" alt="linkedin"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/orlandochallenger" target="_blank">Github <img src="img/github.svg" alt="github"></a>
-            </li>
-          </ul>
+      <footer>
+        <div class="footer-container">
+          <div>
+            <a
+              href="https://www.linkedin.com/in/orlando-challenger-b5ba48100/"
+              target="_blank"
+              ><img
+                src="img/linkedin.svg"
+                alt="linkedin"
+                style="width: 42px; height: 42px"
+            /></a>
+            <a href="https://github.com/orlandochallenger" target="_blank"
+              ><img
+                src="img/github.svg"
+                alt="github"
+                style="width: 42px; height: 42px"
+            /></a>
+          </div>
+          <div>
+            <small>&copy; 2020 Orlando Portfolio</small>
+          </div>
         </div>
-        <div class="col-md text-md-right">
-          <small>&copy; 2020 Orlando Portfolio</small>
-        </div>
-      </div>
-      <!-- footer -->
-    </div>
-    <!-- /container -->
+      </footer><!-- /footer -->
+    </div><!-- /container -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -181,5 +251,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
