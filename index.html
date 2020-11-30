@@ -29,7 +29,7 @@
   </head>
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
     <!-- NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand text-light" href="#home">OC</a>
         <button
@@ -49,10 +49,10 @@
         >
           <div class="navbar-nav">
             <a class="nav-link text-light" href="#home"
-              >Home <span class="sr-only">(current)</span></a
-            >
+              >Home <span class="sr-only">(current)</span></a>
             <a class="nav-link text-light" href="#about">About</a>
-            <a class="nav-link text-light" href="#portfolio">Portfolio</a>
+            <a class="nav-link text-light" href="#projects">Projects</a>
+            <a class="nav-link text-light" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -60,10 +60,10 @@
     <!-- /NAV -->
 
     <!-- JUMBOTRON -->
-    <div class="jumbotron jumbotron-fluid bg-info text-white">
-      <div class="container-jumbotron text-sm-center pt-5">
-        <h1 class="h1-jumbo display-4 text-center">Orlando Challenger</h1>
-        <p class="lead text-center">Front End Web Developer</p>
+    <div class="jumbotron jumbotron-fluid  text-light ">
+      <div class="container-jumbotron text-center d-flex flex-column align-items-center pt-5 ">
+        <h1 class="h1-jumbo display-4 ">Orlando Challenger</h1>
+        <p class="lead ">Front End Web Developer</p>
       </div>
     </div>
     <!-- /JUMBOTRON -->
@@ -71,22 +71,28 @@
     <!-- container -->
     <div class="container">
       <!-- ABOUT -->
-      <div class="container about">
-        <h1 id="about" class="text-center">ABOUT</h1>
-        <div>
-          <p>
-            I am a front-end web developer with skills in CSS(SASS),
-            JavaScript(React, Node.js, MongoDB), Git, Github, and Version Control. I am
-            passionate about mobile web design and providing an engaging user
-            experience on all platforms. Continual education and keeping up with
-            the latest technology trends are both very important to me. I look forward to applying my previous work experience in
-            hospitality to a new career in tech.
-          </p>
+      <div id="about" class="container about">
+        <h1 class="text-center">About Me</h1>
+        <div class="d-md-flex justify-content-between">
+          <div>
+            <img id="selfie" class="img-fluid rounded"  src="img/selfie.jpg" alt="selfie">
+          </div>
+          <div class="text-center">
+            <p>
+              Front-end web developer with skills in HTML, CSS(SCSS),
+              JavaScript(React, Node.js, MongoDB), Git, Github, and Version Control. I am
+              passionate about mobile web design and providing an engaging user
+              experience on all platforms. Continual education and keeping up with
+              the latest technology trends are both very important to me. I look forward to applying my previous work experience in
+              hospitality to a new career in tech.
+            </p>
+          </div>
         </div>
+        
       </div>
       <!-- /ABOUT -->
       <!-- PORTFOLIO -->
-      <h1 id="portfolio" class="text-center">PORTFOLIO</h1>
+      <h1 id="projects" class="text-center">Projects</h1>
       <div class="row row-cols-1">
         <div class="col-md-6 col-lg-4">
           <div class="card mb-5">
@@ -210,36 +216,42 @@
         </div>
       </div>
       <!-- /PORTFOLIO -->
+      <!-- CONTACT -->
+      <div id="contact">
+        <h1  class="text-center">Contact</h1>
+      </div>
+      
+      <!-- /CONTACT -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
       <hr />
 
-      <!-- footer -->
-      <footer>
-        <div class="footer-container">
-          <div>
-            <a
-              href="https://www.linkedin.com/in/orlando-challenger-b5ba48100/"
-              target="_blank"
-              ><img
-                src="img/linkedin.svg"
-                alt="linkedin"
-                style="width: 42px; height: 42px"
-            /></a>
-            <a href="https://github.com/orlandochallenger" target="_blank"
-              ><img
-                src="img/github.svg"
-                alt="github"
-                style="width: 42px; height: 42px"
-            /></a>
-          </div>
-          <div>
-            <small>&copy; 2020 Orlando Portfolio</small>
-          </div>
-        </div>
-      </footer>
-      <!-- /footer -->
     </div>
     <!-- /container -->
+    <!-- footer -->
+    <footer>
+      <div class="footer-container bg-dark mt-2 text-white d-flex flex-column align-items-center ">
+        <div>
+          <a
+            href="https://www.linkedin.com/in/orlando-challenger-b5ba48100/"
+            target="_blank"
+            ><img
+              src="img/linkedin.svg"
+              alt="linkedin"
+              style="width: 42px; height: 42px"
+          /></a>
+          <a href="https://github.com/orlandochallenger" target="_blank"
+            ><img
+              src="img/github.svg"
+              alt="github"
+              style="width: 42px; height: 42px"
+          /></a>
+        </div>
+        <div class="mb-3">
+          <small>&copy; <span class="year"></span> Orlando Portfolio</small>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
